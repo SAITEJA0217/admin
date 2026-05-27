@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+    --bg-base: #080d14;
+    --bg-card: #0d1520;
+    --bg-card2: #111b28;
+    --bg-card3: #0a1422;
+
+    --border: rgba(255, 255, 255, 0.07);
+    --border-bright: rgba(0, 210, 255, 0.25);
+
+    --cyan: #00d4ff;
+    --cyan-dim: rgba(0, 212, 255, 0.15);
+    --cyan-glow: rgba(0, 212, 255, 0.35);
+
+    --green: #00e5a0;
+    --purple: #8b5cf6;
+
+    --text-primary: #e8f0fe;
+    --text-secondary: #7a8fa6;
+    --text-muted: #4a5f75;
+
+    --font-head: 'Manrope', sans-serif;
+    --font-body: 'Manrope', sans-serif;
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 22px;
+
+    --transition: 0.22s cubic-bezier(.4, 0, .2, 1);
+}
+
+/* Smooth scroll (does NOT affect layout spacing) */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--bg-base);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-weight: 100;
+}
+
+/* ✅ Keep transitions only where needed */
+button,
+a {
+    transition: all 0.2s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e3148;
+    border-radius: 4px;
+}
